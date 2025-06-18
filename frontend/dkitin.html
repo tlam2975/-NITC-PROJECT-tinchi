@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Trang chủ của lớp CS, học design web," />
+    <meta name="keywords" content="Trang chủ, lớp CS, disgn web" />
+    <meta name="author" content="Lớp CS, sơn" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="reset.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style_tkb.css" />
+    <link rel="stylesheet" href="style_dki.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Đăng kí tín chỉ</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="body">
+          <!-- nav -->
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="trangchu.html">Trang chủ</a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/12JMQuaUM5f-qtzbkeuIcPQQ4qk41XCnY/view" target="_blank">Hướng dẫn</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- logo -->
+          <a href="trangchu.html"
+            ><img src="./logo.png" alt="NEU" class="logo"
+          /></a>
+
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="kehoach.html">Kế hoạch của bạn</a>
+              </li>
+              <li>
+                <a
+                  href="https://e-bills.vn/pay/neu?fbclid=IwY2xjawF2RWxleHRuA2FlbQIxMAABHfRVqgrXQMPe5sLyxSXxdHt6NDF8VbCAdt6K2OqB-fruUBBJhyiv2BYnvg_aem_BzIFqqnhdk-18_bM3uUsNg"
+                  target="_blank"
+                  >Thanh toán</a
+                >
+              </li>
+              <li>
+                <a href="index.html">Đăng xuất</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <div class="main">
+      <div class="left">
+        <div class="navbar">
+          <div class="sidebar">
+            <div class="nav">
+              <ul>
+                <li>
+                  <a href="dkitin.html"
+                    ><i class="bx bx-cart-add icon"></i
+                    ><span>Đăng kí học phần</span></a
+                  >
+                </li>
+                <li>
+                  <a href="lichsudk.html"
+                    ><i class="bx bx-history icon"></i
+                    ><span>Lịch sử đăng kí học phần</span></a
+                  >
+                </li>
+                <li>
+                  <a href="hocphantuongduong.html"
+                    ><i class="bx bx-transfer-alt icon"></i
+                    ><span>Học phần tương đương</span></a
+                  >
+                </li>
+                <li>
+                  <a href="tracuu.html"
+                    ><i class="bx bx-file-find icon"></i
+                    ><span>Tra cứu học phần</span></a
+                  >
+                </li>
+                <li>
+                  <a href="tkb.html"
+                    ><i class="bx bx-calendar icon"></i
+                    ><span>Thời khóa biểu</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="content">
+          <div class="top_content">
+            <h1>Đăng kí theo kế hoạch cá nhân</h1>
+            <table id="topContentTable">
+              <thead class="courseTable">
+                <tr>
+                  <th>Mã học phần</th>
+                  <th>Tên học phần</th>
+                  <th>STC</th>
+                  <th>Số lượng LHP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CS101</td>
+                  <td>Lập trình cơ bản</td>
+                  <td>3</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>CS102</td>
+                  <td>Cấu trúc dữ liệu</td>
+                  <td>4</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>EC102</td>
+                  <td>Kinh tế vĩ mô</td>
+                  <td>4</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>EC102</td>
+                  <td>Kinh tế vĩ mô</td>
+                  <td>4</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>EC102</td>
+                  <td>Kinh tế vĩ mô</td>
+                  <td>4</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>EC102</td>
+                  <td>Kinh tế vĩ mô</td>
+                  <td>4</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+            <script>
+              document.addEventListener("DOMContentLoaded", function() {
+              // Function to update the table (same as before for bottom_content)
+              function addRowClickEvents() {
+                const topContentRows = document.querySelectorAll("#topContentTable tbody tr");
+                topContentRows.forEach((row) => {
+                  row.addEventListener("click", showModal); // Show modal when a row is clicked
+                });
+              }
+
+              // Function to show modal
+              function showModal() {
+                const modalHTML = `
+                  <section class="modal">
+                    <div class="modal_overlay"></div>
+                    <div class="modal_content">
+                      <div class="modal_header">
+                        <div class="modal_header-title">Các lớp học phần</div>
+                        <div class="modal_header-close" id="closeModal">
+                          <i class="bx bx-x"></i>
+                        </div>
+                      </div>
+                      <div class="modal_body">
+                        <table id="detailTable">
+                          <thead>
+                            <tr>
+                              <th>Loại</th>
+                              <th>Tên LHP</th>
+                              <th>Lớp sinh hoạt</th>
+                              <th>Giới hạn</th>
+                              <th>SLĐK</th>
+                              <th>Lịch học</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Loại 1</td>
+                              <td>Tên LHP 1</td>
+                              <td>Lớp sinh hoạt 1</td>
+                              <td>60</td>
+                              <td>30</td>
+                              <td>Lịch học 1</td>
+                            </tr>
+                            <tr>
+                              <td>Loại 1</td>
+                              <td>Tên LHP 1</td>
+                              <td>Lớp sinh hoạt 1</td>
+                              <td>60</td>
+                              <td>30</td>
+                              <td>Lịch học 1</td>
+                            </tr>
+                            <tr>
+                              <td>Loại 1</td>
+                              <td>Tên LHP 1</td>
+                              <td>Lớp sinh hoạt 1</td>
+                              <td>60</td>
+                              <td>30</td>
+                              <td>Lịch học 1</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </section>`;
+
+                const existingModal = document.querySelector(".modal");
+                if (existingModal) existingModal.remove();
+
+                document.body.insertAdjacentHTML("afterbegin", modalHTML);
+                document.body.style.overflow = "hidden";
+
+                document
+                  .getElementById("closeModal")
+                  .addEventListener("click", closeModal);
+                document
+                  .querySelector(".modal_overlay")
+                  .addEventListener("click", closeModal);
+
+                document.querySelectorAll("#detailTable tbody tr").forEach((row) => {
+                  row.addEventListener("click", function () {
+                    const cells = this.querySelectorAll("td");
+                    const data = {
+                      loai: cells[0].textContent,
+                      tenLHP: cells[1].textContent,
+                      lopSinhHoat: cells[2].textContent,
+                      gioiHan: cells[3].textContent,
+                      sldk: cells[4].textContent,
+                      lichHoc: cells[5].textContent,
+                    };
+
+                    // Display a confirmation dialog
+                    if (
+                      confirm(
+                        `Bạn có chắc chắn muốn chọn:\nLoại: ${data.loai}\nTên LHP: ${data.tenLHP}\nLớp sinh hoạt: ${data.lopSinhHoat}\nGiới hạn: ${data.gioiHan}\nSLĐK: ${data.sldk}\nLịch học: ${data.lichHoc}`
+                      )
+                    ) {
+                      // Save the data or perform any action here
+                      console.log("Data saved:", data);
+                    }
+                  });
+                });
+              }
+
+              function closeModal() {
+                const modal = document.querySelector(".modal");
+                if (modal) modal.remove();
+                document.body.style.overflow = "auto";
+              }
+
+              // Call the function to add click events when the page loads
+              addRowClickEvents();
+            });
+            </script>
+          </div>
+          
+          <div class="bottom_content">
+            <h1>Các học phần trong chương trình</h1>
+            <p>
+              Chương trình đào tạo
+              <select name="txtTrangthai">
+                <option value="0">Chọn</option>
+                <option value="1">Khoa học máy tính 65</option>
+                <option value="2">Kinh tế quốc tế</option>
+              </select>
+            </p>
+            <table id="courseTable">
+              <thead>
+                <tr>
+                  <th>Mã học phần</th>
+                  <th>Tên học phần</th>
+                  <th>STC</th>
+                  <th>Số lượng LHP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Nội dung bảng sẽ được cập nhật dựa trên lựa chọn -->
+              </tbody>
+            </table>
+            <script>
+              const courseData = {
+                1: [
+                  {
+                    code: "CS101",
+                    name: "Lập trình cơ bản",
+                    credits: 3,
+                    instructor: "5",
+                  },
+                  {
+                    code: "CS102",
+                    name: "Cấu trúc dữ liệu",
+                    credits: 4,
+                    instructor: "20",
+                  },
+                ],
+                2: [
+                  {
+                    code: "EC101",
+                    name: "Kinh tế vi mô",
+                    credits: 3,
+                    instructor: "30",
+                  },
+                  {
+                    code: "EC102",
+                    name: "Kinh tế vĩ mô",
+                    credits: 4,
+                    instructor: "40",
+                  },
+                ],
+              };
+
+              // Hàm cập nhật bảng
+              function updateCourseTable(selectedValue) {
+                const tableBody = document.querySelector("#courseTable tbody");
+                tableBody.innerHTML = "";
+
+                if (courseData[selectedValue]) {
+                  courseData[selectedValue].forEach((course) => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                      <td>${course.code}</td>
+                      <td>${course.name}</td>
+                      <td>${course.credits}</td>
+                      <td>${course.instructor}</td>
+                    `;
+                    tableBody.appendChild(row);
+                  });
+                  addRowClickEvents();
+                }
+              }
+
+              // Hàm thêm sự kiện click cho các hàng trong bảng
+              function addRowClickEvents() {
+                const courseTableRows = document.querySelectorAll(
+                  "#courseTable tbody tr"
+                );
+                courseTableRows.forEach((row) => {
+                  row.addEventListener("click", showModal);
+                });
+              }
+
+              // Hàm hiển thị modal
+              function showModal() {
+                const modalHTML = `
+                  <section class="modal">
+                    <div class="modal_overlay"></div>
+                    <div class="modal_content">
+                      <div class="modal_header">
+                        <div class="modal_header-title">Các lớp học phần</div>
+                        <div class="modal_header-close" id="closeModal">
+                          <i class="bx bx-x"></i>
+                        </div>
+                      </div>
+                      <div class="modal_body">
+                        <table id="detailTable">
+                          <thead>
+                            <th>Loại</th>
+                              <th>Tên LHP</th>
+                              <th>Lớp sinh hoạt</th>
+                              <th>Giới hạn</th>
+                              <th>SLĐK</th>
+                              <th>Lịch học</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Loại 1</td>
+                              <td>Tên LHP 1</td>
+                              <td>Lớp sinh hoạt 1</td>
+                              <td>Giới hạn 1</td>
+                              <td>SLĐK 1</td>
+                              <td>Lịch học 1</td>
+                            </tr>
+                            <tr>
+                              <td>Loại 1</td>
+                              <td>Tên LHP 1</td>
+                              <td>Lớp sinh hoạt 1</td>
+                              <td>60</td>
+                              <td>30</td>
+                              <td>Lịch học 1</td>
+                            </tr>
+                            <tr>
+                              <td>Loại 1</td>
+                              <td>Tên LHP 1</td>
+                              <td>Lớp sinh hoạt 1</td>
+                              <td>60</td>
+                              <td>30</td>
+                              <td>Lịch học 1</td>
+                            </tr>
+                            <tr>
+                              <td>Loại 1</td>
+                              <td>Tên LHP 1</td>
+                              <td>Lớp sinh hoạt 1</td>
+                              <td>60</td>
+                              <td>30</td>
+                              <td>Lịch học 1</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </section>`;
+
+                const existingModal = document.querySelector(".modal");
+                if (existingModal) existingModal.remove();
+
+                document.body.insertAdjacentHTML("afterbegin", modalHTML);
+                document.body.style.overflow = "hidden";
+
+                document
+                  .getElementById("closeModal")
+                  .addEventListener("click", closeModal);
+                document
+                  .querySelector(".modal_overlay")
+                  .addEventListener("click", closeModal);
+                
+                document.querySelectorAll("#detailTable tbody tr").forEach((row) => {
+                  row.addEventListener("click", function () {
+                    const cells = this.querySelectorAll("td");
+                    const data = {
+                      loai: cells[0].textContent,
+                      tenLHP: cells[1].textContent,
+                      lopSinhHoat: cells[2].textContent,
+                      gioiHan: cells[3].textContent,
+                      sldk: cells[4].textContent,
+                      lichHoc: cells[5].textContent,
+                    };
+
+                    // Display a confirmation dialog
+                    if (
+                      confirm(
+                        `Bạn có chắc chắn muốn chọn:\nLoại: ${data.loai}\nTên LHP: ${data.tenLHP}\nLớp sinh hoạt: ${data.lopSinhHoat}\nGiới hạn: ${data.gioiHan}\nSLĐK: ${data.sldk}\nLịch học: ${data.lichHoc}`
+                      )
+                    ) {
+                      // Save the data or perform any action here
+                      console.log("Data saved:", data);
+                    }
+                  });
+                });
+              }
+
+              function closeModal() {
+                const modal = document.querySelector(".modal");
+                if (modal) modal.remove();
+                document.body.style.overflow = "auto";
+              }
+
+              document
+                .querySelector('select[name="txtTrangthai"]')
+                .addEventListener("change", function () {
+                  const selectedValue = this.value;
+                  updateCourseTable(selectedValue);
+                });
+
+                
+            </script>
+          </div>
+
+          <div class="summary">
+            <div class="registration-summary">
+              <h2 id="totalCredits">Tổng tín chỉ đã đăng ký: 0</h2>
+              <ul id="registeredCourses">
+                <!-- Các môn học đã đăng ký sẽ được thêm vào đây bằng JavaScript -->
+              </ul>
+            </div>
+            
+            <style>
+              .registration-summary {
+                position: fixed;
+                right: 30px;
+                top: 120px;
+                width: 250px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              }
+              .registration-summary h2 {
+                font-size: 18px;
+                margin: 0 0 10px;
+              }
+              .registration-summary ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+              }
+              .registration-summary li {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 8px;
+              }
+              .registration-summary .cancel-button {
+                background-color: #ff6666;
+                border: none;
+                color: white;
+                padding: 2px 5px;
+                cursor: pointer;
+                border-radius: 3px;
+              }
+              .registration-summary .cancel-button:hover {
+                background-color: #cc0000;
+              }
+            </style>
+  
+            <script>
+              // Dữ liệu đăng ký mẫu
+              let registeredCourses = [];
+  
+              function updateRegistrationSummary() {
+                const totalCreditsElem = document.getElementById("totalCredits");
+                const registeredCoursesElem = document.getElementById("registeredCourses");
+  
+                // Tính tổng tín chỉ
+                const totalCredits = registeredCourses.reduce((sum, course) => sum + course.credits, 0);
+                totalCreditsElem.textContent = `Tổng tín chỉ đã đăng ký: ${totalCredits}`;
+  
+                // Làm mới danh sách hiển thị
+                registeredCoursesElem.innerHTML = "";
+                registeredCourses.forEach((course, index) => {
+                  const courseItem = document.createElement("li");
+                  courseItem.innerHTML = `
+                    ${course.name} - ${course.credits} tín chỉ
+                    <button class="cancel-button" onclick="cancelCourse(${index})">Hủy</button>
+                  `;
+                  registeredCoursesElem.appendChild(courseItem);
+                });
+              }
+  
+              // Thêm tín chỉ đã đăng ký vào danh sách
+              function registerCourse(code, name, credits) {
+                registeredCourses.push({ code, name, credits });
+                updateRegistrationSummary();
+              }
+  
+              // Hủy đăng ký môn học theo index
+              function cancelCourse(index) {
+                registeredCourses.splice(index, 1);
+                updateRegistrationSummary();
+              }
+  
+              // Ví dụ đăng ký môn học (có thể thay thế bằng hành động thực tế)
+              registerCourse("CS101", "Lập trình cơ bản", 3);
+              registerCourse("CS102", "Cấu trúc dữ liệu", 4);
+  
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-title" style="text-align: center; font-weight: bold">
+        ĐĂNG KÍ TÍN CHỈ
+      </div>
+      <div class="content_footer">
+        <div class="row">
+          <div class="column">
+            <a href="https://www.neu.edu.vn/" target="_blank"
+              ><img src="./banner.png" alt="NEU" width="500"
+            /></a>
+          </div>
+          <div class="column">
+            <h3 class="title">ĐẠI HỌC KINH TẾ QUỐC DÂN</h3>
+            <br />
+            <div class="socials">
+              <a href="https://www.facebook.com/ktqdNEU/" target="_blank"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCV24tBVKuhkSC1kd36FbvmA"
+                target="_blank"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+              <a href="https://x.com/DaiHocKTQD" target="_blank"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://www.neu.edu.vn/"
+                ><img src="./neu_qr.png" alt="NEU"
+              /></a>
+            </div>
+            <ul>
+              <li>
+                <i class="bx bxs-home"></i>
+                <span
+                  >207 Giải Phóng, Đồng Tâm, Quận Hai Bà Trưng, Hà Nội, Việt
+                  Nam</span
+                >
+              </li>
+              <li>
+                <i class="bx bxs-phone"></i>
+                <a href="tel:(84)24.36.280.280">(84)24.36.280.280</a>
+                <a href="tel:(84)24.38.695.992"
+                  ><i class="fa fa-fax"></i>(84)24.38.695.992</a
+                >
+              </li>
+              <li>
+                <i class="bx bxl-gmail"></i>
+                <a href="mailto:dhktqd@neu.edu.vn">dhktqd@neu.edu.vn</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3 class="title">PHÒNG QUẢN LÝ ĐÀO TẠO</h3>
+            <br />
+            <div class="socials">
+              <a href="https://www.facebook.com/tvtsneu" target="_blank"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCV24tBVKuhkSC1kd36FbvmA"
+                target="_blank"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+              <a href="https://x.com/DaiHocKTQD" target="_blank"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://daotao.neu.edu.vn/"
+                ><img src="./qr-code_qldt1.png" alt="NEU" width="80"
+              /></a>
+            </div>
+            <ul>
+              <li>
+                <i class="bx bxs-home"></i>
+                <span
+                  >Phòng 210 - 211 - 213 Tầng 2 - Nhà A1 - Trường ĐH Kinh tế
+                  Quốc dân</span
+                >
+              </li>
+              <li>
+                <i class="bx bxs-phone"></i>
+                <a href="tel:(84)24.36.280.280">(84)24.36.280.280</a>
+              </li>
+              <li>
+                <i class="bx bxl-gmail"></i>
+                <a href="mailto:phqldt@neu.edu.vn">phqldt@neu.edu.vn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
