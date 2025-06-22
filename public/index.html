@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style0.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Đăng nhập</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login_container">
+        <div class="login_title">
+          <span>Đăng nhập</span>
+        </div>
+
+        <div class="input_wrapper">
+          <input type="text" class="input_field" id="user" required />
+          <label for="user" class="label">Tên đăng nhập</label>
+          <i class="fa-regular fa-user icon"></i>
+        </div>
+
+        <div class="input_wrapper">
+          <input type="password" class="input_field" id="pass" required />
+          <label for="pass" class="label">Mật khẩu</label>
+          <i class="fa-solid fa-lock icon"></i>
+        </div>
+
+        <div class="remember-forgot">
+          <div class="remember-me">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+
+          <div class="forgot">
+            <a href="https://password.neu.edu.vn/ResetPassword" target="_blank"
+              >Forgot password?</a
+            >
+          </div>
+        </div>
+
+        <div class="input_wrapper">
+          <input
+            type="submit"
+            class="input-submit"
+            value="Đăng nhập"
+            onclick="login()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function login() {
+        // Giả sử kiểm tra đăng nhập thành công
+        if (true) {
+          window.location.href = "trangchu.html";
+        }
+      }
+    </script>
+  </body>
+</html>
