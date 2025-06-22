@@ -1,7 +1,0 @@
-style cho footer và header nằm trong style tkb
-
-style tkb và style không khác nhau đâu, chắc thế
-
-style với tkb gần tương tự nhau
-
-stle 0 cho trang đăng nhập
